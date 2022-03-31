@@ -1,0 +1,43 @@
+name: CBMFC
+main: de.Herbystar.CBMFC.Main
+version: 2.8
+author: Herbystar
+description: BungeeCord version of CTSNC!
+commands:
+  msg:
+    usage: /msg <player> <message>
+    description: Send a private message over the complete network!
+    aliases: [w, message]
+  reply:
+    usage: /reply <message>
+    description: Reply to the last received private message!
+    aliases: r
+  maintenance:
+    usage: /maintenance
+    description: Toggle the maintenance mode!
+  friend:
+    usage: /friend
+    description: Show friend system help!
+    aliases: friends
+  party:
+    usage: /party
+    description: Show party system help!
+  pc:
+    usage: /pc <message>
+    description: Direct party chat command!
+  gblreload:
+    usage: /gblreload
+    description: Reload full configuration
+permissions:
+  CBMFC.Friend:
+    description: Need to use the friend command as player
+  CBMFC.Party:
+    description: Need to use the party command as player
+  CBMFC.Maintenance:
+    description: Need to use the maintenance command as a player
+  CBMFC.Maintenance.Bypass:
+    description: Bypass the maintenance mode
+  CBMFC.Message:
+    description: Need to use the msg command
+  CBMFC.Message.Monitor:
+    description: Allows you to see all private messages send over the network
