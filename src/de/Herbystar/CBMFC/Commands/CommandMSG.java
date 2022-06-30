@@ -33,7 +33,7 @@ public class CommandMSG extends Command {
 			
 			if(args.length > 1) {
 				if(pp.hasPermission("CBMFC.Message")) {
-					//e = Empfänger
+					//e = Receiver
 					ProxiedPlayer e = ProxyServer.getInstance().getPlayer(args[0]);
 					if(e == null) {				
 						pp.sendMessage(TextComponent.fromLegacyText(ReplaceString.replace(Main.instance.config.getString("MessageSystem.NotOnline"), pp).replace("[player-off]", args[0])));
