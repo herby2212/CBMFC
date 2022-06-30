@@ -108,6 +108,10 @@ public class CommandPARTY extends Command {
 			}
 			
 			if(args.length == 2) {
+				if(pp.getName().equals(args[1])) {
+					pp.sendMessage(TextComponent.fromLegacyText(ReplaceString.replace(Main.instance.config.getString("Party.YourSelf"), pp)));
+					return;
+				}
 				if(args[0].equalsIgnoreCase("invite")) {
 					if(Party.hasParty(pp)) {
 						if(Party.getParty(pp).isCreator(pp)) {

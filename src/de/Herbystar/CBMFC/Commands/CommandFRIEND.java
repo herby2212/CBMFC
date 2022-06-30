@@ -49,6 +49,7 @@ public class CommandFRIEND extends Command {
 	String friend_invite_pending = Main.instance.config.getString("Friend.Invite.Pending");
 	String friend_invite_removed = Main.instance.config.getString("Friend.Invite.Removed");
 	String no_friend_invite = Main.instance.config.getString("Friend.NoFriendInvite");
+	String friend_yourself = Main.instance.config.getString("Friend.YourSelf");
 	String notFriends = Main.instance.config.getString("Friend.NotFriends");
 	String friend_accept = Main.instance.config.getString("Friend.Accept");
 	String friend_accept_info = Main.instance.config.getString("Friend.Accept_Info");
@@ -173,6 +174,10 @@ public class CommandFRIEND extends Command {
 			}
 			
 			if(args.length == 2) {
+				if(pp.getName().equals(args[1])) {
+					pp.sendMessage(TextComponent.fromLegacyText(ReplaceString.replace(friend_yourself, pp)));
+					return;
+				}
 				if(args[0].equalsIgnoreCase("join")) {
 					ProxiedPlayer ppTarget = null;
 					try {

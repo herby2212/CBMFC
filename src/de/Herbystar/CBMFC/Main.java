@@ -265,6 +265,7 @@ public class Main extends Plugin {
 		setObject(config, "Party.DeclineInfo", "&6[&bParty&6] &eThe player &6[cbmfc-player-name] &cdeclined &eyour invite!");
 		setObject(config, "Party.AlreadyInParty", "&6[&bParty&6] &cYou're already in a party!");
 		setObject(config, "Party.NoInvite", "&6[&bParty&6] &cYou did not receive any invite!");
+		setObject(config, "Party.YourSelf", "&6[&bParty&6] &cYou can't execute a party command on yourself!");
 		setObject(config, "Party.Invite.Sent", "&6[&bParty&6] &aInvite sent!");
 		setObject(config, "Party.Invite.Accept.Text", "&2[Accept <13>]");
 		setObject(config, "Party.Invite.Accept.Hover", "&2Click here to accept the invite!");
@@ -296,6 +297,7 @@ public class Main extends Plugin {
 		setObject(config, "Friend.NotFriends", "&c[&2Friend&c] &cYou and the invited user are no friends!");
 		setObject(config, "Friend.Removed", "&c[&2Friend&c] &eFriend &cremoved!");
 		setObject(config, "Friend.NoFriendInvite", "&c[&2Friend&c] &cYou got no friend invite by that player!");
+		setObject(config, "Friend.YourSelf", "&c[&2Friend&c] &cYou can't execute a friend command on yourself!");
 		setObject(config, "Friend.Invite.Sender", "&c[&2Friend&c] &aFriend invite successfully sent!");
 		setObject(config, "Friend.Invite.Receiver", "&c[&2Friend&c] &eYou received a friend invite by &6[cbmfc-player-name]");
 		setObject(config, "Friend.Invite.Pending", "&c[&2Friend&c] &cUser already invited, waiting for answer!");
